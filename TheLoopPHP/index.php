@@ -180,7 +180,7 @@ foreach ($sideStories as $s) {
 	</div>
 
 	<!--Reviews-->
-	<div class="reviews">
+	<div class="reviews" id="news3">
 		<div class="container">
 			<div class="width-12 title">
 				<h1>Reviews</h1>
@@ -254,73 +254,73 @@ foreach ($sideStories as $s) {
 			<div class="width-1 circle">
 				<img src="imagesED/artists/weekend2.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>1.The Weeknd</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/TS.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>2.Taylor Swift</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/kanye.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>3.Kanye West</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/yeat.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>4.Yeat</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/arianag.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>5.Ariana Grande</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/carti.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>6.Playboi Carti</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/Ed.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>7.Ed Sheeran</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/scott.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>8.Travis Scott</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/postmalone.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>9.Post Malone</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/kidlaroi.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>10.The Kid LAROI</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/Aries.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>11.Aries</h2>
 			</div>
 			<div class="width-1 circle">
 				<img src="imagesED/artists/icespice.png">
 			</div>
-			<div class="width-2 text">
+			<div class="width-2 topart-text">
 				<h2>12.Ice Spice</h2>
 			</div>
 		</div>

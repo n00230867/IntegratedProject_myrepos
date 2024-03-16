@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -275,6 +275,7 @@ img.circle {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 
 

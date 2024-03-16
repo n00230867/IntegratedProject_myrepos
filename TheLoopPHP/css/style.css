@@ -1,0 +1,338 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  
+  h1{
+      font-size: 36px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+  
+  }
+  
+  h2{
+      font-size: 28px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+  }
+  
+  h3{
+      font-size: 22px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 800;
+      font-style: bold;
+  }
+  
+  h4{
+      font-size: 17px;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  p{
+    font-size: 17px;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  h5{
+      margin: 0;
+      font-size: 14px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+  }
+  
+  /*Header*/
+  
+  .main-header {
+      background-color: black;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo1 img {
+      height: 248px;
+      width: 316px;
+  }
+  
+  .nav-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 108px;
+      margin-right: 420px;
+  }
+  
+  .nav-menu ul li {
+      display: inline-block;
+      margin-right: 60px;
+  }
+  
+  .nav-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-menu ul li a:hover {
+      color: #525252;
+  }
+  
+  .login-container {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+  }
+  
+  .login-box {
+      text-align: center;
+  }
+  
+  .login-box h3 {
+      color: white; /* White text */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 2px solid #ffffff; /* White outline */
+      padding: 5px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Add transitions */
+  }
+  
+  .login-box h3:hover {
+      background-color: #00FF86; /* Green background */
+      color: #000000; /* Black text */
+      border-color: #00FF86; /* Green border */
+  }
+  
+  .ourplaylist {
+      margin-right: 40px;
+      margin-top: 30px; /* Adjust margin as needed */
+      margin-bottom: 40px;
+  }
+  
+  .log1{
+      margin-right: 10px;
+  }
+  
+  /*Main story*/
+  /* .small-article{
+    margin-top: 110px;
+    /* margin-bottom: 30px ; */
+
+
+ 
+
+  h1 .main_story{
+      font-size: 40px;
+  }
+  
+  .first_news{
+      background-color: white;
+      justify-content: center;
+  }
+  
+  .Left_Panel_Content1 {
+      margin-top: 50px;
+      border-right: 1px solid #C5C5C5;
+      /* Add a border on the right side */
+      border-bottom: 1px solid #C5C5C5;
+      /* Add a border on the bottom side */
+  }
+  
+  .Left_Panel_Content2{
+      margin-top: 84px;
+      margin-bottom: 84px;
+      border-right: 1px solid #C5C5C5;
+      /* Add a border on the right side */
+      border-bottom: 1px solid #C5C5C5;
+      /* Add a border on the bottom side */
+  }
+  
+  .Left_Panel_Content3{
+      margin-bottom: 50px;
+      border-right: 1px solid #C5C5C5;
+      /* Add a border on the right side */
+      border-bottom: 1px solid #C5C5C5;
+      /* Add a border on the bottom side */
+  }
+
+  /*News*/
+.newsSides img{
+    height: 192px;
+  }
+.newsSides h1{
+    font-size: 28px;
+}
+  
+  
+  /*Recents*/
+  .image1{
+      width: 50%;
+  }
+  
+  .Right_Panel_Content {
+      display: flex;
+      border-right: 1px solid #C5C5C5;
+      /* Add a border on the right side */
+      border-bottom: 1px solid #C5C5C5;
+      /* Add a border on the bottom side */
+      margin-bottom: 10px;
+  }
+  
+  .Right_Panel_Content img{
+      margin-right: 10px;
+  }
+  
+  .Right_Panel h5{
+      font-weight: 400;
+  }
+  
+  .Bottom_Panel_Content{
+      margin-top: 20px;
+  }
+  
+  .text-on-right {
+      float: right;
+      margin-left: 10px;
+  }
+  
+  .text-on-right h4{
+      font-weight: 600;
+  }
+  
+  .text-on-right h3{
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+  
+  .text-on-right h5{
+      font-weight: 800;
+  }
+  
+    /*Top Artists*/
+    .top_artists{
+        background-color: #C5C5C5;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    img.circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .topart-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .latest-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+  
+  /*Footer*/
+  .infoftr.container{
+      padding-top: 0px;
+  }
+  .footer {
+      background-color: black;
+      color: #fff;
+  }
+  
+  .logo-and-search {
+      display: flex;
+      align-items: center;
+  }
+  
+  img.logo2 {
+      height: 218px;
+      width: 286px;
+  }
+  
+  .search {
+      margin-left: 1150px; /* Push the search bar to the right */
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 100;
+  }
+  
+  .search input {
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 15px;
+      width: 405px;
+  }
+  
+  .lists {
+      display: block;
+  }
+  
+  .lists h2 {
+      margin-bottom: 30px;
+  }
+  
+  .lists h3 {
+      font-weight: 200;
+      transition: color 0.3s ease;
+  }
+  
+  .lists ul {
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  .lists li {
+      color: #fff;
+      margin-bottom: 30px;
+  }
+  
+  .lists li a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .lists li a:hover {
+      color: #525252;
+  }
+  
+  .playlist-footer h2 {
+      margin-bottom: 30px;
+  }

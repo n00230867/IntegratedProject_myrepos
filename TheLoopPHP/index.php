@@ -104,9 +104,7 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
                     <div class="small-article">
                 <img src="<?= $stories[$i]->img_url ?>" />
                 <div class="content">
-                <p>
-                    <span class="topic"><?= Category::findById($stories[$i]->category_id)->name ?></span>
-                </p>
+                
                 <h3><a href="#"><?= $stories[$i]->headline ?></a></h3>
                 <p class="author">By <?= Author::findById($stories[$i]->author_id)->first_name . " " . Author::findById($stories[$i]->author_id)->last_name ?></p>
                 </div>
@@ -124,7 +122,7 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
                 ?>  
                
                 <div class="main-article">
-				<h1><a href="#"><?= $firstStory->headline ?></a></h1>
+				<h2><a href="#"><?= $firstStory->headline ?></a></h2>
                 <img src="<?= $firstStory->img_url ?>" />
                 <div class="content">
                 <p>
@@ -182,33 +180,37 @@ foreach ($sideStories as $s) {
 	</div>
 
 	<!--Reviews-->
-	<div class="recents" id="news3">
+	<div class="reviews">
 		<div class="container">
 			<div class="width-12 title">
 				<h1>Reviews</h1>
 			</div>
 
-			<div class="width-4">
-				<img src="imagesED/image18.png">
-			</div>
-
-			<div class="width-4">
-				<div class="text-on-right">
-					<h2>The music is so good you would not believe what happens</h2>
-					<p>
-					<h3>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe
-						many are illegally trafficked from the wild.</h3>
-					</p>
-					<h4>By Milana Raizensona</h4>
-					<h4>01/01/2024</h4>
+			<div class="width-8 Top_Panel">
+				<div class="Top_Panel_Content">
+					<img class="image1" src="imagesED/image15.png">
+					<div class="text_panel">
+						<h5>27/02/2024</h5>
+						<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
+						<p>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe many are illegally trafficked from the wild.</p>
+						<h5>Adam Pandey</h5>
+					</div>
 				</div>
-				<!-- Each one of these is your individual story content -->
 
+				<div class="Top_Panel_Content">
+					<img class="image1" src="imagesED/image15.png">
+					<div class="text_panel">
+						<h5>27/02/2024</h5>
+						<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
+						<p>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe many are illegally trafficked from the wild.</p>
+						<h5>Adam Pandey</h5>
+					</div>
+				</div>
 			</div>
+			
 
 			<div class="width-4">
 				<div class="Right_Panel">
-					<!-- Each one of these is your individual story content -->
 					<div class="Right_Panel_Content">
 						<img class="image1" src="imagesED/image15.png">
 						<div class="text_panel">
@@ -241,6 +243,7 @@ foreach ($sideStories as $s) {
 
 			</div>
 		</div>
+	</div>
 
 	<!--Top Artists-->
 	<div class="top_artists">

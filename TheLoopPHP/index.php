@@ -26,8 +26,6 @@ $categoryId = 1;
 $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3, 'offset' => 2));
 
 
-
-
 ?>
 
 <!DOCTYPE html>

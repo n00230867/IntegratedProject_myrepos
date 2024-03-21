@@ -48,12 +48,8 @@ $sideStories = Story::findAll($options = array('limit' => 3, 'offset' => 1));
            <p><?= $s->updated_at ?></p>
         </div>
           
-            
-
         </div>
     <?php } ?>
-
-
     <?php
 // Counter to keep track of iterations
 $iterationCount = 0;
@@ -62,6 +58,8 @@ foreach ($sideStories as $s) {
     // Check if it's every second iteration
     $class = ($iterationCount % 2 === 1) ? "width-6" : "width-3";
 ?>
+        </div>
+    </div>
 
 <div class="<?= $class ?>" >
     <img src="<?= $s->img_url ?>" />

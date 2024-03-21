@@ -25,6 +25,9 @@ $mainStory = Story::findAll($options = array('limit' => 1, 'offset' => 0));
 $categoryId = 1;
 $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3, 'offset' => 2));
 
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +52,7 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
 <body>
 
 
-<!--Header-->
+	<!--Header-->
 	<div class="main-header" id="news1">
 		<div class="logo1">
 			<img src="imagesED/the_loop_logo-removebg-preview.png" alt="Logo">
@@ -63,10 +66,10 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
 					<h2><a href="#news3">Reviews</a></h2>
 				</li>
 				<li>
-					<h2><a href="#news4">Concerts & Events</a></h2>
+					<h2><a href="#news4">Top Artists</a></h2>
 				</li>
 				<li>
-					<h2><a href="#news5">Interview</a></h2>
+					<h2><a href="#news5">Other</a></h2>
 				</li>
 			</ul>
 		</div>
@@ -95,8 +98,6 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
 		
 		<!-- Your stories on the left -->
 		
-
-
 		<div class="newsleftstories width-3">
             <?php
                 for($i=1; $i<count($stories); $i++) {
@@ -122,23 +123,19 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
                 ?>  
                
                 <div class="main-article">
-				<h2><a href="#"><?= $firstStory->headline ?></a></h2>
                 <img src="<?= $firstStory->img_url ?>" />
+				<h1><a href="#"><?= $firstStory->headline ?></a></h1>
                 <div class="content">
-                <p>
-                    <span class="topic"><?= Category::findById($firstStory->category_id)->name ?></span>
-                </p>
                 
                 <p class="author">By <?= Author::findById($firstStory->author_id)->first_name . " " . Author::findById($firstStory->author_id)->last_name ?></p>
                 </div>
                 </div>
             </div>  
 			<div class="width-12">
-					<hr>
-				</div>
+				<hr>
+			</div>
 	</div>
 	</section>
-
 
 	<!--News-->
 	<div class="news" id="news2">
@@ -148,32 +145,31 @@ $sideStories = Story::findByCategory($categoryId, $options = array('limit' => 3,
 				<h1>News</h1>
 			</div>
 
-			<?php
-// Counter to keep track of iterations
-$iterationCount = 0;
+		<?php
+			// Counter to keep track of iterations
+			$iterationCount = 0;
 
-foreach ($sideStories as $s) {
-    // Check if it's every second iteration
-    $class = ($iterationCount % 2 === 1) ? "width-6" : "newsSides width-3";
-?>
+			foreach ($sideStories as $s) {
+   			 	// Check if it's every second iteration
+    			$class = ($iterationCount % 2 === 1) ? "width-6" : "newsSides width-3";
+			?>
 
-<div class="<?= $class ?>" >
-    <img src="<?= $s->img_url ?>" />
-    <h3><?= Category::findById($s->category_id)->name ?></h3>
-    <h1><?= $s->headline ?></h1>
-    <h4><?= Author::findById($s->author_id)->first_name . " " . Author::findById($s->author_id)->last_name . " in " .
-    Location::findById($s->location_id)->name ?></h4>
-    <div class="article"><?= substr($s->article, 0, 200) ?></div>
-    <p><?= $s->updated_at ?></p>
-</div>
+			<div class="<?= $class ?>" >
+    			<img src="<?= $s->img_url ?>" />
+   			 <h3><?= Category::findById($s->category_id)->name ?></h3>
+    			<h1><?= $s->headline ?></h1>
+   			 <h3><?= Author::findById($s->author_id)->first_name . " " . Author::findById($s->author_id)->last_name ?></h3>
+   			 <div class="article"><?= substr($s->article, 0, 190) ?></div>
+    			<p><?= date('d/m/Y', strtotime($s->updated_at)) ?></p>
+			</div>
 
-<?php
-    // Increment the iteration count
-    $iterationCount++;
-}
-?>
+		<?php
+ 	 	  // Increment the iteration count
+  	 	 $iterationCount++;
+		}
+		?>
 
-			<div class="width-12">
+			<div class="width-12 divider">
 				<hr>
 			</div>
 		</div>
@@ -198,7 +194,7 @@ foreach ($sideStories as $s) {
 				</div>
 
 				<div class="Top_Panel_Content">
-					<img class="image1" src="imagesED/image15.png">
+					<img class="image1" src="imagesED/yeat-2093.png">
 					<div class="text_panel">
 						<h5>27/02/2024</h5>
 						<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
@@ -212,7 +208,7 @@ foreach ($sideStories as $s) {
 			<div class="width-4">
 				<div class="Right_Panel">
 					<div class="Right_Panel_Content">
-						<img class="image1" src="imagesED/image15.png">
+						<img class="image2" src="imagesED/dontoliver.png">
 						<div class="text_panel">
 							<h5>27/02/2024</h5>
 							<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
@@ -220,7 +216,7 @@ foreach ($sideStories as $s) {
 						</div>
 					</div>
 					<div class="Right_Panel_Content">
-						<img class="image1" src="imagesED/image16.png">
+						<img class="image2" src="imagesED/folk.png">
 						<div class="text_panel">
 							<h5>27/02/2024</h5>
 							<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
@@ -228,7 +224,7 @@ foreach ($sideStories as $s) {
 						</div>
 					</div>
 					<div class="Right_Panel_Content">
-						<img class="image1" src="imagesED/image19.png">
+						<img class="image2" src="imagesED/fatherjohn.png">
 						<div class="text_panel">
 							<h5>27/02/2024</h5>
 							<h3>If Alien Life is Artificially Intelligent, it May be Stran...</h3>
@@ -246,7 +242,7 @@ foreach ($sideStories as $s) {
 	</div>
 
 	<!--Top Artists-->
-	<div class="top_artists">
+	<div class="top_artists" id="news4">
 		<div class="container">
 			<div class="width-12 top-title">
 				<h1>Top Artists</h1>
@@ -327,55 +323,28 @@ foreach ($sideStories as $s) {
 	</div>
 
 	<!--The Latest-->
-	<div class="recents" id="news4">
+	<div class="recents" id="news5">
 		<div class="container">
 			<div class="width-12 title">
 				<h1>The Latest</h1>
 			</div>
-			<div class="width-6 image">
-				<img src="imagesED/image23.png">
-			</div>
-			<div class="width-6 text">
-				<div>
-					<h2>The music is so good you would not believe what happens</h2>
-					<p>
-					<h4>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe
-						many are illegally trafficked from the wild.</h4>
-					</p>
-					<h4>By Milana Raizensona</h4>
-					<h4>01/01/2024</h4>
-				</div>
-			</div>
 
+			<?php foreach ($sideStories as $s) { ?>
 			<div class="width-6 image">
-				<img src="imagesED/image23.png">
+				<img src="<?= $s->img_url ?>" />
 			</div>
-			<div class="width-6 text">
+			<div class="width-6 latest-text">
 				<div>
-					<h2>The music is so good you would not believe what happens</h2>
+					<h2><?= $s->headline ?></h2>
 					<p>
-					<h4>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe
-						many are illegally trafficked from the wild.</h4>
+					<h4><?= substr($s->article, 0, 200) ?></h4>
 					</p>
 					<h4>By Milana Raizensona</h4>
-					<h4>01/01/2024</h4>
+					<h4><?= date('d/m/Y', strtotime($s->updated_at)) ?></h4>
 				</div>
 			</div>
+			<?php } ?>
 
-			<div class="width-6 image">
-				<img src="imagesED/image23.png">
-			</div>
-			<div class="width-6 text">
-				<div>
-					<h2>The music is so good you would not believe what happens</h2>
-					<p>
-					<h4>Everything from Ozempic to Covid vaccines is tested on long-tailed macaques. Experts believe
-						many are illegally trafficked from the wild.</h4>
-					</p>
-					<h4>By Milana Raizensona</h4>
-					<h4>01/01/2024</h4>
-				</div>
-			</div>
 		</div>	
 	</div>
 
